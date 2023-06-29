@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>My portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img class="fade-in-section" src="nature.jpg" alt="自然の画像">
+  </section>
+
+  <h1 id="profile">Profile</h1>
+  <div class="profile-section">
+    <img class="profile-picture" src="youngman.png" alt="プロフィール画像">
+    <div class="profile-text">
+      <h2>筒井 学</h2>
+      <p>こんにちは、私の名前は筒井学です。ウェブ開発やAIの勉強をしています。現在は、AWSを用いて自身のサーバーを構築したり、ブログを立ち上げたりしています。また、クラウドワークスにてウェブライターの案件受注のしており、星5の評価をいただいています。趣味は、スポーツと旅行です。よろしくお願いいたします。</p>
+    </div>
+  </div>
+
+  <h2 id="contact">Contact Me</h2>
+  <div class="contact-section">
+    <form action="submit_form.php" method="post">
+      <label for="twitter">Twitter Handle</label>
+      <input type="text" id="twitter" name="twitter" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
